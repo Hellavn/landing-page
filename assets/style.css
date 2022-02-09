@@ -20,7 +20,6 @@ body{
 
 .main-bg{
     background-image: url('../img/endless-constellation.svg');
-    background-size:contain;
     background-position: center center;
     color: var(--white-color);
 }
