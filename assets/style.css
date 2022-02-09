@@ -1,0 +1,49 @@
+:root{
+    --primary-color: #000;
+    --white-color: rgb(255, 255, 255);
+    ---gap: 3rem;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'open-sans', sans-serif;
+    font-size: 2rem;
+    color: var(--primary-color);
+    
+}
+
+.main-bg{
+    background-image: url('../img/endless-constellation.svg');
+    background-size:contain;
+    background-position: center center;
+    color: var(--white-color);
+}
+
+.white-bg{
+    background: var(--white-color);
+}
+
+.main-content{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(---gap);
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+    font-size: 6rem;
+    text-transform: uppercase;
+}
+
+.section{
+    min-height: 100vh;
+}
