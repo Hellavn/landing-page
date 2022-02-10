@@ -14,14 +14,24 @@ a{
     text-decoration: none;
 }
 
+p{
+    margin-bottom: 2rem;
+}
+
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 body{
     font-family: 'open-sans', sans-serif;
     font-size: 2rem;
     color: var(--primary-color);
-    
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 6rem;
+    text-transform: uppercase;
 }
 
 .main-bg{
@@ -32,21 +42,13 @@ body{
 
 .white-bg{
     background: var(--white-color);
+    color: var(--primary-color);
 }
 
 .main-content{
     max-width: 1200px;
     margin: 0 auto;
     padding: var(---gap);
-}
-
-h1, h2, h3, h4, h5, h6{
-    font-family: 'Montserrat', sans-serif;
-}
-
-h1{
-    font-size: 6rem;
-    text-transform: uppercase;
 }
 
 .section{
@@ -88,7 +90,7 @@ h1{
     color: var(--white-color);
 }
 .menu h1 a{
-    /*Link LOGO herda a cor da classe pai*/
+    /* ancora  LOGO herda a cor da classe pai*/
     color: inherit;
 }
 
@@ -135,4 +137,36 @@ h1{
 .intro-img img{ 
     max-width: 100%;
     height: auto;
+}
+
+.partI-content{
+    max-width: 64rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.partII-content{
+    height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    height: 100vh;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(---gap);
+    counter-reset: grid-counter;
+}
+
+.grid h3{
+    font-size: 3rem;
+}
+
+.grid h3::before{
+    font-size: 3rem;
 }
